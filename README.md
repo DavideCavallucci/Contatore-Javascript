@@ -7,27 +7,13 @@
 <h2>💡 Funzionalità</h2>
 <ul>
   <li><strong>Incremento:</strong> Aumenta il valore del contatore di 1.</li>
-  <li><strong>Decremento:</strong> Riduce il valore del contatore di 1.</li>
+  <li><strong>Decremento:</strong> Riduce il valore del contatore di 1. Non decrementa per valori inferiori a 0.</li>
   <li><strong>Reset:</strong> Riporta il valore del contatore a 0.</li>
-  <li><strong>Cambio di colore:</strong> Il colore del numero cambia in base al valore del contatore.</li>
+  <li><strong>Raddoppia:</strong> Il valore del contatore può essere raddoppiato, non vale quando vale 0.</li>
+  <li><strong>Dimezza:</strong> Il valore del contatore può essere diviso per 2, troncato all'intero inferiore. Non vale per numeri minori o uguali di 1.</li>
+  <li><strong>Incremento di 10:</strong> Aumenta il valore del contatore di 10 quando il pulsante rimane premuto.</li>
+  <li><strong>Decremento di 10:</strong> Riduce il valore del contatore di 10 quando il pulsante rimane premuto. Per valori inferiori a 10 decrementa fino a 0.</li>
 </ul>
-
-<h2>⚒️ Struttura del codice</h2>
-
-<p><strong>La struttura può essere suddivisa in 4 parti principali:</strong></p>
-
-<ol>
-
-  <li>Ricerca e ottenimento del contenitore del display del contatore e quello dedicato ai pulsanti.</li>
-    <ul><li>Creazione della variabile che gestirà il valore dinamico del display.</li></ul>
-  <li>Creazione dei bottoni dinamici da appendere al contenitore dei pulsanti.</li>
-  <li>Gestione eventi del contatore con <code>.addEventListener()</code> per l’incremento, decremento e reset dei valori.</li>
-  <li>Creazione funzione <code>colore()</code> per rendere il colore dei valori condizionali.</li>
-    <ul><li>Verde: se il numero è positivo.</li></ul>
-    <ul><li>Rosso: se il numero è negativo.</li></ul>
-    <ul><li>Se uguale a 0 il colore non subirà cambiamenti.</li></ul>
-
-</ol>
 
 <h2>👨🏻‍💻 Testa il progetto</h2>
 <p>Non ti resta che provare tu stesso, basta che clicchi il link qui in basso:</p>
