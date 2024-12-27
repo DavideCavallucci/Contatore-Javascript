@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
 
     <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="asset/images/counter.webp">
+    <link rel="icon" type="image/x-icon" href="asset/images/Logo.webp">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,55 +18,54 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
 
-<header>
-    <div class="contenitore-header">
-        <div class="interno-header">
-            <a class="logo" href="#"><img class="img-logo" src="asset/images/Logo.webp" alt="logo"></a>
-            <a class="bottone-header" href="https://dgmichele.github.io/Il-mio-portfolio/" rel="noopener" target="_blank">Portfolio</a>
+    <!-- Header -->
+    <header>
+        <a href="../index.html"><img src="asset/images/Logo.webp" class="logo" alt="Logo Personale Cavallucci Davide"></a>
+        <a class="btn personal-site" href="https://davidecavallucci.github.io" aria-label="Vai al mio portoflio">Vai al mio portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </header>
+
+    <div class="container">
+        <h1>Contatore JavaScript</h1>
+        <!-- Display del contatore -->
+        <div id="counter">0</div>
+        <!-- Contenitore per i pulsanti di controllo in linea e centrati -->
+        <div class="button-container">
+            <button id="increment" class="btn increment">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button id="reset" class="btn neutral">
+                <span>Reset</span>
+                <i class="fas fa-undo"></i>
+            </button>
+            <button id="decrement" class="btn decrement">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <!-- Altri bottoni -->
+        <div class="buttons">
+            <button id="double" class="btn secondary">
+                <span>Raddoppia</span>
+                <i class="fas fa-times"></i>
+            </button>
+            <button id="halve" class="btn secondary">
+                <span>Dimezza</span>
+                <i class="fas fa-divide"></i>
+            </button>
         </div>
     </div>
-</header>
-    
-<main>
 
-    <section class="contenitore-contatore">
-        <div class="interno-contatore">
-            <div class="contenitore-display">
-                <div class="interno-display">
-                    <div class="contatore"> 
-                        <!-- Il valore del display del contatore verrà creato dinamicamente con Javascript -->
-                    </div>
-                </div>
-            </div>
-            <div class="contenitore-pulsanti">
-                <div class="interno-pulsanti">
-                    <div class="pulsanti">
-                        <!-- I pulsanti verranno creati dinamicamente con Javascript -->
-                    </div>
-                </div>
-            </div>      
-        </div>
-    </section>        
-
-</main>
-
-<footer>
-    <div class="contenitore-footer">
-      <div class="interno-footer">
-        <a class="icona" href="https://github.com/dgmichele" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a class="icona" href="https://www.linkedin.com/in/micheledelgiudice96" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-      <p class="testo-footer">Copyright © 2024 Michele del Giudice. Tutti i diritti riservati.</p>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <a href="https://www.linkedin.com/in/davide-cavallucci" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/DavideCavallucci" target="_blank" class="social"><i class="fab fa-github"></i></a>
+    </footer>
 
 <script src="asset/js/counter.js"></script>
 
