@@ -120,7 +120,6 @@ h1 {
     color: white;
     background: rgba(38, 38, 38, 0.75);
     transition: all 0.3s ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Bottoni con solo icone (+ e -) */
@@ -132,7 +131,6 @@ h1 {
 /* Hover con animazione */
 .btn:hover {
     background: rgba(38, 38, 38, 0.9);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Pulsanti disabilitati */
